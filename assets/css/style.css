@@ -30,6 +30,11 @@ textarea {
   border-radius: 15px;
 }
 
+.lead {
+  margin: 50px 50px 0px;
+}
+
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -70,5 +75,6 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-
+/* .ui-menu { width: 200px; }
+.ui-widget-header { padding: 0.2em; } */
 

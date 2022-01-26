@@ -28,129 +28,81 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <p id="localTime" class="lead"></p>
     </header>
+
+
     <div class="container">
-      <div class="row">
-        <div class="col-12" id="accordion">
-          <h3>8:00am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>8:30am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>9:00am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>9:30am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>10:00am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>10:30am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>11:00am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>11:30am</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-<!-- pm starts -->
-          <h3>12:00pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>12:30pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>1:00pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>1:30pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>2:00pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>2:30pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>3:00pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>3:30pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>4:00pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>4:30pm</h3>
-          <div>
-            <p>
-              Scheduled Activities Here
-            </p>
-          </div>
-          <h3>5:00pm</h3>
-          <div>
-            <p>
-              GO HOME!
-            </p>
-          </div>
-          
-      
+
+      <div id="eightOclock" class="row"> 
+        <div class="col-md-1 hour">8:00am</div> 
+        <textarea class="col-md-10 time-block"></textarea> 
+        <button class="col-md-1 saveBtn">save</button> 
         </div>
-      </div>
+
+        <div id="nineOclock" class="row"> 
+          <div class="col-md-1 hour">9:00am</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="tenOclock" class="row"> 
+          <div class="col-md-1 hour">10:00am</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="elevenOclock" class="row"> 
+          <div class="col-md-1 hour">11:00am</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="elevenOclock" class="row"> 
+          <div class="col-md-1 hour">11:00am</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="twelveOclock" class="row"> 
+          <div class="col-md-1 hour">12:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="oneOclock" class="row"> 
+          <div class="col-md-1 hour">1:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="twoOclock" class="row"> 
+          <div class="col-md-1 hour">2:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="threeOclock" class="row"> 
+          <div class="col-md-1 hour">3:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="fourOclock" class="row"> 
+          <div class="col-md-1 hour">4:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+        <div id="fiveOclock" class="row"> 
+          <div class="col-md-1 hour">5:00pm</div> 
+          <textarea class="col-md-10 time-block"></textarea> 
+          <button class="col-md-1 saveBtn">save</button> 
+        </div>
+
+
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

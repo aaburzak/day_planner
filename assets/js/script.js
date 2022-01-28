@@ -1,31 +1,101 @@
-// const eventEntry = $("#entryEight");
-// const eightAm = $("eight");
-// const nineAm = $("nine");
-// const saveBtn = $("saveBtn")
-const timeBlock = $(".time_block")
 
 
-//today's date and time displayed in the jumbotron header
+
+// const workHours = [
+//   {
+//     when: "8am",
+//     militaryTime: 08
+//   },
+//   {
+//     when: "9am",
+//     militaryTime: 09
+//   },
+//   {
+//     when: "10am",
+//     militaryTime: 10
+//   },
+//   {
+//     when: "11am",
+//     militaryTime: 11
+//   },
+//   {
+//     when: "12pm",
+//     militaryTime: 12
+//   },
+//   {
+//     when: "1pm",
+//     militaryTime: 13
+//   },
+//   {
+//     when: "2pm",
+//     militaryTime: 14
+//   },
+//   {
+//     when: "3pm",
+//     militaryTime: 15
+//   },
+//   {
+//     when: "4pm",
+//     militaryTime: 16
+//   },
+//   {
+//     when: "5pm",
+//     militaryTime: 17
+//   },
+// ]
+
+
+
+
 const today = moment();
 $("#currentDay").text(today.format("dddd, MMM Do, YYYY"));
 
 const localTime = moment();
 $("#localTime").text(today.format("LT"));
 
-const workHours = [08, 09, 10, 11, 12, 01, 02, 03, 04, 05]
+
+
+const timeCheck = moment().format('HH');
+
+$(".hour_Check").each(function(){
+  const hourCheck = $(this).attr("id");
+
+  if (timeCheck == hourCheck) {
+    $(this).addClass("present");
+  } else if (timeCheck < hourCheck){
+    $(this).removeClass("present");
+    $(this).addClass("future");
+  } else if (timeCheck > hourCheck){
+    $(this).removeClass("future");
+    $(this).addClass("past");
+  }
+});
+
 // console.log (workHours)
 
 // const eightAm = $("#eight").text(workHours[0]);
 
-$(".time_block").each(function(){
-  if(timeBlock === moment().startOf('hour')
-  .addClass('present')
-  );
-});
+// $(".time_block").each(function(){
+//   if(timeBlock === moment().startOf('hour')
+//   .addClass('present')
+//   );
+// });
+
+function creation(hourCheck) {
+  console.log(thisHour);
+  const thisHour = parseInt(hourCheck.attr('id').split("-")[0]);
+
+  if (timeCheck === thisHour) {
+    hourCheck.addClass("present");
+  } else if (timeCheck > thisHour){
+    hourCheck.addClass("past");
+  } else if (timeCheck < thisHour){
+    hourCheck.addClass("future");
+  }
+}
 
 
-
-
+// const TimesArray = [textareaEl_8, textareaEl_9, textareaEL_10,];
 
 
 
@@ -44,13 +114,6 @@ $(".time_block").each(function(){
 
 // function to compare h of current time and calender and assign classes accordingly
 
-
-//accordion widget allows planned events to collapse
-$( function() {
-  $( "#accordion" ).accordion({
-    collapsible: true
-  });
-} );
 
 
 

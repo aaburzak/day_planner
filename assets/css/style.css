@@ -75,6 +75,18 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+.clear{
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.clearBtn{
+  color: white;
+  background: orangered;
+  border-radius: 15px;
+}
+
 /* .ui-menu { width: 200px; }
 .ui-widget-header { padding: 0.2em; } */
 
